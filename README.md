@@ -15,6 +15,21 @@ Hex: with each click the backgroundColor of the page switches to random colors u
   
   ![image](https://user-images.githubusercontent.com/123842557/227721642-0c8582f9-9669-4309-8778-73d3080d5551.png)
   
+  
+  
+# 2.Counter:    
+  
+Another simple project to solidify my knowlodge further.  
+  
+ It has 3 buttons:   
+    
+Increase:which increases the counter by one.  
+Decrease:Which does the opposite.     
+Reset:Which resets the counter back to 0.     
+  
+The Color of the counter changes if the current number is above, below, or = 0    
+    
+![image](https://user-images.githubusercontent.com/123842557/227726426-ca82091e-0484-4830-8c02-b1b1cd4f932b.png)
     
       
         
