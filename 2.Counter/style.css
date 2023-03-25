@@ -1,0 +1,67 @@
+:root{
+    --backgroundColor:#9CBAD3;
+}
+
+*{
+    margin:0; 
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    display: grid; 
+    justify-items: center;
+    background-color: var(--backgroundColor);
+}
+main{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+.container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main h1 { 
+    font-size: 3rem;
+}
+#span{
+    font-size:5rem;
+}
+.btn-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap:9em;
+    
+}
+.btn {
+    font-size:20px;
+    padding : 6px;
+    height:2em;
+    width:5.5em;
+    border-radius: 12px;
+    background-color: transparent;
+    transform:scale(1.0);
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.2);
+    
+}
+.reset { 
+    width:4.5em;
+    height: 1.5em;  
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    top:0.5em;
+}
