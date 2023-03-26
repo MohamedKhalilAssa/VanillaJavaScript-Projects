@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0 ; 
+    box-sizing:border-box;
+}
+
+.container {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    background-color: #d3d3d3;
+}
+
+.title { 
+    font-size:3rem;
+    padding:1rem; 
+}
+.underline{
+width:8rem;
+border-top: 0.5rem solid yellow;
+padding-bottom:1rem;
+}
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width:25vw;
+    height:55vh;
+    max-height:100vh;
+    padding: 2rem;
+    border: 1px solid black;
+    background-color: gray;
+    border-radius: 2rem;
+}
+.img-container { 
+    padding: 1rem;
+}
+#img { 
+    width:10em;
+    border-radius:50%  ;
+    object-fit: contain;
+}
+.personal-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    padding-bottom:4rem ;
+}
+.name{ 
+    font-size:2rem;
+    
+
+}
+#job{
+    font-size: 1.5rem;
+    
+}
+.info { 
+    padding-top: 2rem;
+    max-width:20vw;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:20vw;
+    
+}
+.btn {
+    background-color: transparent;
+    border: none;
+}
+.prev-btn, .next-btn {
+    font-size:2rem;
+    position:relative;
+    bottom:2.5rem;
+}
+.prev-btn{
+    left:2rem
+}
+.next-btn {
+    right:2rem;
+}
+.random {
+    border-radius:2rem;
+    border:1px solid black;
+    padding:0.5rem; 
+}
+i,.random{
+    transform:scale(1.0);
+    transition:0.2s ease-in-out ;
+}
+i:hover, .random:hover {
+    transform: scale(1.2);
+}
