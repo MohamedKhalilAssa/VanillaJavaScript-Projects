@@ -29,9 +29,17 @@ Reset:Which resets the counter back to 0.
   
 The Color of the counter changes if the current number is above, below, or = 0    
     
-![image](https://user-images.githubusercontent.com/123842557/227726426-ca82091e-0484-4830-8c02-b1b1cd4f932b.png)
+![image](https://user-images.githubusercontent.com/123842557/227726426-ca82091e-0484-4830-8c02-b1b1cd4f932b.png)  
+  
     
-      
+ # 3.Reviews Page:
+ This page allows you to look at different reviews and switch through them using the 'Next','Prev' or 'Suprise Me' buttons. 
+ This project might be useful in a Product Landing Page which I plan to do later on.
+ 
+ The JS in this is still Basic. I plan to increase the difficulty as I go on.   
+  
+![Screenshot 2023-03-26 161646](https://user-images.githubusercontent.com/123842557/227789317-a2657329-2445-400a-9f48-f48683d74b99.png)
+
         
    # How to Run the Projects 
 To run any of the projects in this repository, simply clone the repository to your local machine and open the corresponding HTML file in your web browser. Each project is entirely self-contained, so you don't need to install any additional dependencies or tools.
