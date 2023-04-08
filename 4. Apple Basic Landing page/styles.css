@@ -1,0 +1,97 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:sans-serif;
+    
+}
+
+#container { 
+    min-height:100vh;
+    width:100vw;
+    background-color: #1e1e1e;
+    overflow:hidden ;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height:10vh;
+    border-bottom:2px solid white; 
+    margin-bottom:4rem;
+}
+#logo { 
+    width:3.5rem;
+}
+#navbar li { 
+    display: inline-block;
+    padding:1rem;
+    font-size: 24px;
+    transition: all 0.25s ease-in-out;
+    
+}
+#navbar a {
+    color:#fff;
+}
+#navbar li:hover{
+    transform:scale(1.2);
+}
+#navbar a:hover{
+    color:white ;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:80%;
+    margin: auto;
+    margin-bottom:2vh;
+}
+.text{
+    color:#fff;
+    width:30%;
+    position:relative;
+}
+.text h2 {
+    font-size:3rem;
+    text-transform: uppercase;
+}
+.text p {
+    font-size:1rem ;
+    padding: 6rem 0 ;
+    padding-left:1.7rem;
+    line-height: 1.5rem;
+}
+.button{
+    color:#000000;
+    background-color: #fff;
+    padding:6px 14px;
+    border-radius: 12px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+.img{
+    width:30%
+}
+#product{
+    width:300px;
+}
+.icons{
+    width:40vw;
+    margin:0 auto;
+    position: absolute;
+    left:40%;
+    
+}
+
+.icons img{
+    width:100px;
+    transition: all 0.25s ease-in-out;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
