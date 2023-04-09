@@ -45,7 +45,16 @@ The Color of the counter changes if the current number is above, below, or = 0
   JavaScript is used on the icons at the bottom. With each click the phone showed will change and so will the background to match the change. 
     
   ![image](https://user-images.githubusercontent.com/123842557/230727689-7798d6aa-202c-4289-bc55-6141f8aea5a5.png)
-
+    
+      
+   # 5. Digital Clock:  
+   This is a fully working Clock changing by the second.  
+   This Project had me using the date methods and some new techniques I've never used before, even if It's pretty simple.     
+   Tools: HTML - CSS - JS     
+        
+              
+   ![image](https://user-images.githubusercontent.com/123842557/230749106-2b870d39-bb6b-40b1-ac4e-e27f0a57e71c.png)
+           
         
    # How to Run the Projects 
 To run any of the projects in this repository, simply clone the repository to your local machine and open the corresponding HTML file in your web browser. Each project is entirely self-contained, so you don't need to install any additional dependencies or tools.
