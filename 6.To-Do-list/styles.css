@@ -34,6 +34,7 @@ gap:1rem;
     width:80%;
     height: 2.4rem;
     border-radius: 0.25rem;
+    padding: 0 0.5rem 0;
     border:1px solid lightgray;
 }
 .text:focus {
@@ -58,6 +59,7 @@ gap:1rem;
     border-radius: 0.5rem;
     width: 50vw;
     height:11vh;
+    padding:0 2.5rem 0;
 }   
 .inTask{
     display: flex;
@@ -88,3 +90,40 @@ gap:1rem;
     font-size:1.3rem;
     margin: 0 1rem;
 }
+
+@media screen and (max-width:767px) {
+    .input{
+        width:90vw;
+    }
+    .submit{
+        width:15%;
+    }
+    .tasks{
+        width:90vw;
+    }
+    .inTask {
+        width:90%;
+    }
+    .inTask button{
+        width:15%;
+        height:70%;
+    }
+}   
+@media screen and (min-width:768px) {
+    .input{
+        width:90vw;
+    }
+    .submit{
+        width:4rem;
+    }
+    .tasks{
+        width:90vw;
+    }
+    .inTask {
+        width:90%;
+    }
+    .inTask button{
+        width:4rem;
+        height:70%;
+    }
+}   
