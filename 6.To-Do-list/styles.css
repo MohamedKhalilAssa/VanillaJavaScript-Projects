@@ -100,9 +100,10 @@ gap:1rem;
     }
     .tasks{
         width:90vw;
+        padding: 0 1rem 0;
     }
     .inTask {
-        width:90%;
+        width:100%;
     }
     .inTask button{
         width:15%;
