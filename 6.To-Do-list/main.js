@@ -30,7 +30,6 @@ btn.addEventListener("click",(target)=>{
         let targetR=input.value;
     //function to create a new task
       CreateTask(targetR);
-      console.log(targetR);
     //deleting tasks configuration
     let deleteButton=document.querySelectorAll(".delete");
     removeEventListeners(deleteButton)
@@ -47,12 +46,14 @@ btn.addEventListener("click",(target)=>{
 });
 
 function Delete(btn){
-    btn.parentElement.remove();
     
     if(currHeight>14){
-        currHeight-=10;
-        taskDiv.style.height=`${currHeight}vh`;
+        let newHeight =  btn.parentElement.offsetHeight - 30;
+        console.log(newHeight)
+        currHeight-=newHeight;
+        taskDiv.style.height=`${currHeight}px`;
     }
+    btn.parentElement.remove()
 }
 function CreateTask(text){
     let initialTest=tasks.findIndex(ele=>{return ele.task === text});
@@ -72,12 +73,14 @@ function CreateTask(text){
     newD.classList.add('inTask');
     tasks.push({task:`${text}`});
     window.localStorage.setItem('beforeTasks',JSON.stringify(tasks));
-    //styling div and appending to it
-    if(taskDiv.childElementCount>=1){
-    currHeight+=10;
-    taskDiv.style.height=`${currHeight}vh`;
-    }
+    //styling div and appending to it 
     taskDiv.appendChild(newD);
+    if(taskDiv.childElementCount>=1){
+        const newDHeight = newD.offsetHeight + 30;
+        currHeight+=  newDHeight;
+        taskDiv.style.height=`${currHeight}px`;
+    }
+   
 }
 }
 function CreateTaskWithLocal(text){
@@ -95,11 +98,13 @@ function CreateTaskWithLocal(text){
     newD.appendChild(button);
     newD.classList.add('inTask');
     //styling div and appending to it
-    if(taskDiv.childElementCount>=1){
-    currHeight+=10;
-    taskDiv.style.height=`${currHeight}vh`;
-    }
+  
     taskDiv.appendChild(newD);
+    if(taskDiv.childElementCount>=1){
+        const newDHeight = newD.offsetHeight + 30;
+        currHeight+=  newDHeight;
+        taskDiv.style.height=`${currHeight}px`;
+    }
 }
 
 function removeEventListeners(buttons) {
@@ -113,5 +118,4 @@ function deleteFromStorage(target){
  let index= tasks.findIndex(ele=>{return ele.task === target});
  tasks.splice(index,1);
  window.localStorage.setItem('beforeTasks',JSON.stringify(tasks));
- console.log(index);
 }
