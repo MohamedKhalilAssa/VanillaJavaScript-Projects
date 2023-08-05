@@ -1,9 +1,7 @@
 let taskDiv =document.querySelector(".tasks");
 let btn =document.querySelector(".submit");
 let input =document.querySelector(".text");
-let currHeight=11;
 let tasks=[];
-let exec=0;
 //checking localStorage
 if(window.localStorage.getItem('beforeTasks')){
        let theArray=JSON.parse(window.localStorage.getItem('beforeTasks'));
@@ -46,13 +44,6 @@ btn.addEventListener("click",(target)=>{
 });
 
 function Delete(btn){
-    
-    if(currHeight>14){
-        let newHeight =  btn.parentElement.offsetHeight - 30;
-        console.log(newHeight)
-        currHeight-=newHeight;
-        taskDiv.style.height=`${currHeight}px`;
-    }
     btn.parentElement.remove()
 }
 function CreateTask(text){
@@ -75,12 +66,7 @@ function CreateTask(text){
     window.localStorage.setItem('beforeTasks',JSON.stringify(tasks));
     //styling div and appending to it 
     taskDiv.appendChild(newD);
-    if(taskDiv.childElementCount>=1){
-        const newDHeight = newD.offsetHeight + 30;
-        currHeight+=  newDHeight;
-        taskDiv.style.height=`${currHeight}px`;
-    }
-   
+
 }
 }
 function CreateTaskWithLocal(text){
@@ -97,14 +83,10 @@ function CreateTaskWithLocal(text){
     newD.appendChild(newT);
     newD.appendChild(button);
     newD.classList.add('inTask');
-    //styling div and appending to it
+    //appending the new div to the tasks holder 
   
     taskDiv.appendChild(newD);
-    if(taskDiv.childElementCount>=1){
-        const newDHeight = newD.offsetHeight + 30;
-        currHeight+=  newDHeight;
-        taskDiv.style.height=`${currHeight}px`;
-    }
+    
 }
 
 function removeEventListeners(buttons) {
