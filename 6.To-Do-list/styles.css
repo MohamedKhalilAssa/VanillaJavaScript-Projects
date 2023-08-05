@@ -58,7 +58,7 @@ gap:1rem;
     background-color:lightgray ;
     border-radius: 0.5rem;
     width: 50vw;
-    height:11vh;
+    min-height:11vh;
     padding:0 2.5rem 0;
 }   
 .inTask{
