@@ -89,7 +89,7 @@ main h2{
     color : #19A7CE;
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:500px) {
     .center{
         padding-top:10px;
         flex-direction: column;
