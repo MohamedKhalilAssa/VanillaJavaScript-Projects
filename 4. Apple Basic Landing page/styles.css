@@ -4,21 +4,22 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family:sans-serif;
-    
+    overflow-x: hidden;
 }
-
+body{
+    min-height: 100vh;
+}
 #container { 
     min-height:100vh;
     width:100vw;
     background-color: #1e1e1e;
-    overflow:hidden ;
+    overflow:auto ;
     position: relative;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
     height:10vh;
     border-bottom:2px solid white; 
     margin-bottom:4rem;
@@ -44,24 +45,26 @@ header{
 }
 .content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width:80%;
+    width: 100%;
     margin: auto;
     margin-bottom:2vh;
 }
 .text{
     color:#fff;
     width:30%;
+    height:450px;
+    margin-left: 0.5rem;
     position:relative;
 }
 .text h2 {
-    font-size:3rem;
+    font-size:2rem;
     text-transform: uppercase;
 }
 .text p {
     font-size:1rem ;
-    padding: 6rem 0 ;
+    padding: 2rem 0 ;
     padding-left:1.7rem;
     line-height: 1.5rem;
 }
@@ -75,17 +78,18 @@ header{
     transform: translateX(-50%);
 }
 .img{
-    width:30%
+    width:400px;
 }
-#product{
-    width:300px;
-}
+.img img{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+  }
 .icons{
-    width:40vw;
-    margin:0 auto;
-    position: absolute;
-    left:40%;
-    
+    width: 100%;
+    justify-content: center;
+    overflow-y: hidden;
+    display: flex;
 }
 
 .icons img{
@@ -95,21 +99,25 @@ header{
 .icons img:hover{
     transform: scale(1.2);
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:500px) {
     #container{
        height:150vh;
+    }
+    header{
+        justify-content: center;
     }
     #navbar{
       display: none;  
     }
     .text{
         width:80%;
+        margin-bottom:0 ;
     }
     .text p {
         padding-left:0;
     }
     .button{
-      bottom:2rem;      
+      bottom:5rem;      
     }
   .content{
     flex-direction: column;
@@ -117,10 +125,17 @@ header{
     align-items: center;
   }
   .img{
-   width:80%;
+   width:200px;
+   min-height:10px;
+   text-align: center;
   }
+ 
   .icons {
-    width:100vw;
-    left:11%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .icons .btn{
+    width:60px;
   }
 }
