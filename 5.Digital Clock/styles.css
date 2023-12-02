@@ -19,8 +19,9 @@
 }
 .Clock{
     background-color: #999999;
-    width:18vw;
-    height:8vh;
+    min-width:370px;
+    height:10vh;
+    padding:0 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,15 +38,16 @@ span:not(.points) {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width:700px){
+ @media screen and (max-width:500px){
+   .container h2{
+        font-size: 3rem;
+    }
     .Clock{
-        height:10vh;
-        width:90vw;
-
+        min-width: 100px;
     }
 }
 
-
+/*
 
 @media screen and (max-width:1200px){
     .Clock{
@@ -59,4 +61,4 @@ span:not(.points) {
         width:40vw;
         height:10vh;
     }
-}
+} */
