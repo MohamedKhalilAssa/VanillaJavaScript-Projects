@@ -15,3 +15,8 @@ btn.addEventListener("click",function(){
 });
 
 let RandomFromArray = () => Math.floor(Math.random()*hex.length);
+
+
+document.querySelector(".hamburger").addEventListener("click",()=>{
+    document.querySelector(".center").classList.toggle("active");
+})

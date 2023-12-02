@@ -11,3 +11,8 @@ btn.addEventListener("click", function() {
 })
 
 let RandomNumber = ()=> Math.floor(Math.random()*colors.length);
+
+// hamburger configuration
+document.querySelector(".hamburger").addEventListener("click",()=>{
+    document.querySelector(".center").classList.toggle("active");
+})
